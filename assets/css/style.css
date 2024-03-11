@@ -1,6 +1,7 @@
 body{
     margin: 0;
     text-align: center;
+   background-color: black;
 }
     h1{
     background-color: gray;
@@ -16,6 +17,7 @@ body{
 	color:gray;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: white;
 }
 #colorDisplay {
 	font-size: 200%;
@@ -35,8 +37,32 @@ body{
 	margin: 1.66%;
 	border: 50%;
 	transition: background 0.6s;
+    
 	
 }
+
+button {
+	border: none;
+    background:none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color:gray;
+	letter-spacing: 1px;
+	font-size: inherit;
+	outline: none;
+}
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+button:hover {
+	color: white;
+	background: gray;
+}
+
+
 #container {
 	margin: 20px auto;
 	max-width: 600px;
@@ -45,6 +71,7 @@ body{
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+    color: gray;
 }
 #score {
     color: green;
@@ -61,7 +88,7 @@ body{
 }
 
 
-/* --------- Media queries */
+/*  Media queries */
 
 @media (max-width: 414px) {
     .score-area {
