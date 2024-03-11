@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    text-align: center;
 }
     h1{
     background-color: gray;
@@ -23,3 +24,54 @@ body{
 	color: white;
 	background: gray;
 }
+.circle {
+	
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border: 50%;
+	transition: background 0.6s;
+	
+}
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+#score {
+    color: green;
+    font-weight: bold;
+}
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+.scores {
+    display: inline-block ;
+    padding: 25px;
+    
+}
+
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+}
+
