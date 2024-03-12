@@ -1,25 +1,17 @@
-runGame(){
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
 
-}
-checkAnswer(){
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
 
-}
-calculateCorrectAnswer(){
-
-}
-incrementScore(){
-
-}
-incrementWrongAnswer(){
-
-}
-displayEasyColors(){
-
-}
-displayMediumColors(){
-
-}
-displayHardColors(){
-    
-}
-
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "reset") {
+                alert("You clicked Reset!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+});
