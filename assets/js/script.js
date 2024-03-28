@@ -23,7 +23,7 @@ easyBtn.addEventListener("click", function(){
 	pickedColor = randomColorG();
 	//change display to show new picked color
 	colorDisplay.textContent = pickedColor;
-	//loop through 3 circles and reset colors while displaying none for cicles without new reset colors
+	//loop through 3 circles and reset colors while displaying none for circles without new reset colors
 	for(var i = 0; i < circles.length; i++){
 		if(colors[i]){
 			circles[i].style.background = colors[i];
@@ -46,7 +46,7 @@ mediumBtn.addEventListener("click", function(){
 	pickedColor = randomColorG();
 	//change display to show new picked color
 	colorDisplay.textContent = pickedColor;
-	//loop through 3 circles and reset colors while displaying none for cicles without new reset colors
+	//loop through 6 circles and reset colors while displaying none for circles without new reset colors
 	for(var i = 0; i < circles.length; i++){
 		if(colors[i]){
 			circles[i].style.background = colors[i];
@@ -77,7 +77,7 @@ resetButton.addEventListener("click", function(){
 	pickedColor = randomColorG();
 	//change colorDisplay to match picked color
 	colorDisplay.textContent = pickedColor;
-	resetButton.textContent = "New Colors";
+	resetButton.textContent = "Reset";
 	messageDisplay.textContent = "";
 	//change colors of circles
 	for(var i = 0; i < circles.length; i++){
