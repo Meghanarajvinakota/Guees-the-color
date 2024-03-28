@@ -10,6 +10,24 @@ var easyBtn = document.querySelector("#easyButton");
 var mediumBtn = document.querySelector("#mediumButton");
 var hardBtn = document.querySelector("#hardButton");
 
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
+
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "playagain") {
+                alert("You clicked Reset!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+});
+
 easyBtn.addEventListener("click", function(){
 	//highlight button to show selected
 	hardBtn.classList.remove("selected");
